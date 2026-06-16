@@ -84,7 +84,7 @@ export default function Hero() {
               
               {
               <img 
-                src="/profile.png" 
+                src="/profile_new.png" 
                 alt="Dulshan Rajeewa" 
                 className="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity"
               /> 
