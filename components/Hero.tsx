@@ -4,7 +4,8 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-6 sm:px-12 lg:px-24 bg-[#0d0d0d] text-[#ffffff] overflow-hidden">
+    // ADDED: pt-28 pb-12 and changed min-h-screen to min-h-[100dvh] for mobile browsers
+    <section className="relative min-h-[100dvh] flex flex-col justify-center items-center px-6 sm:px-12 lg:px-24 pt-28 pb-12 bg-[#0d0d0d] text-[#ffffff] overflow-hidden">
       {/* Background Subtle Gradient Glow */}
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#ff6b00] rounded-full blur-[120px] opacity-10 pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-[#ff6b00] rounded-full blur-[120px] opacity-5 pointer-events-none" />
@@ -78,17 +79,14 @@ export default function Hero() {
         </div>
 
         {/* Right Column: Visual Frame */}
-        <div className="lg:col-span-5 flex justify-center items-center">
+        <div className="lg:col-span-5 flex justify-center items-center mt-8 lg:mt-0">
           <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full p-1 bg-gradient-to-b from-neutral-800 to-transparent">
             <div className="w-full h-full rounded-full bg-[#121212] flex items-center justify-center overflow-hidden border border-neutral-900 shadow-2xl">
-              
-              {
               <img 
                 src="/profile_new.png" 
                 alt="Dulshan Rajeewa" 
                 className="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity"
               /> 
-              }
             </div>
 
             {/* Metrics Widget Overlay */}
