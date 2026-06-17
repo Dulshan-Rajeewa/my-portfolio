@@ -15,10 +15,10 @@ const researchPapers = [
       "This research introduces a novel, privacy-preserving framework that shifts the paradigm to behavioral biometrics. By analyzing keystroke dynamics—specifically typing speed, mechanical pressure, and micro-hesitations—the framework facilitates low-latency, on-device emotion state identification without ever parsing the user's semantic content or accessing visual data."
     ],
     team: [
-      { name: "Dulshan Rajeewa", url: "#" },
-      { name: "Teammate One", url: "#" },
-      { name: "Teammate Two", url: "#" },
-      { name: "Teammate Three", url: "#" }
+      { name: "UD Rajeewa", url: "#" },
+      { name: "PHMLCB Abeyrathne", url: "#" },
+      { name: "MPBR Perera", url: "#" },
+      { name: "IGSB Rupasingha", url: "#" }
     ],
     image: "/projects/research.jpg"
   },
@@ -127,7 +127,7 @@ export default function Research() {
 
                     <div className="pt-6 border-t border-neutral-800 mt-6">
                       <p className="text-xs text-neutral-500 mb-3 font-mono uppercase tracking-wider">
-                        Co-Authored with Team Visual Vibers
+                        Co-Authored with
                       </p>
                       <div className="flex flex-wrap gap-3">
                         {paper.team.map((member, index) => (

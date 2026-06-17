@@ -100,8 +100,19 @@ export default function Design() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#ff6b00]" />
-                <p className="text-sm text-neutral-300 font-medium">Web & Graphic Maintenance (MEOD MUSIC)</p>
-              </div>
+                  <p className="text-sm text-neutral-300 font-medium">
+                    Web & Graphic Maintenance (
+                    <a
+                      href="https://meodmusic.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-400 hover:text-orange-300 underline"
+                    >
+                      MEOD MUSIC
+                    </a>
+                    )
+                  </p>
+                </div>
               <div className="flex items-center gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#ff6b00]" />
                 <p className="text-sm text-neutral-300 font-medium">Consistent High Success Score</p>
@@ -110,9 +121,8 @@ export default function Design() {
           </div>
 
           <div className="z-10 w-full lg:w-auto shrink-0">
-            {/* REPLACE WITH YOUR ACTUAL WIX URL */}
             <a 
-              href="https://your-wix-portfolio-url.com" 
+              href="https://dulshanrj1.wixsite.com/dulshan/portfolio-1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 rounded-lg font-medium text-sm text-black bg-[#ff6b00] hover:bg-[#e05e00] transition-colors duration-300 shadow-lg shadow-[#ff6b00]/10 group"

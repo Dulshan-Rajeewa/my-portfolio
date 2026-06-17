@@ -27,8 +27,8 @@ export default function Hero() {
           </div>
 
           <p className="text-base sm:text-lg text-neutral-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Specializing in full-stack systems and privacy-preserving behavioral biometrics. 
-            Building scalable cloud architectures and exploring low-latency, on-device machine learning frameworks.
+            Full-stack developer combining a strong foundation in Java, PHP, and React with a professional background in graphic design. 
+            I build intuitive, user-centric web applications while simultaneously exploring advanced privacy-preserving biometrics.
           </p>
 
           {/* Social Links (SVG Icons) */}
@@ -85,7 +85,7 @@ export default function Hero() {
               <img 
                 src="/profile_new.png" 
                 alt="Dulshan Rajeewa" 
-                className="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity"
+                className="w-full h-full object-cover contrast-110 saturate-110"
               /> 
             </div>
 
