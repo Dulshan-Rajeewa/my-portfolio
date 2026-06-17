@@ -6,32 +6,37 @@ import Image from 'next/image';
 // 1. Array for your Figma competition designs
 const figmaDesigns = [
   {
-    id: "competition-1",
-    title: "FinTech Mobile Dashboard", // Replace with your actual project name
-    category: "Interactive Prototype",
-    event: "Inter-University Hackathon", // Replace with the actual competition
-    image: "/projects/design1.jpg", // Add this image to your public/projects folder
-    description: "Developed a comprehensive high-fidelity prototype focusing on seamless user onboarding and data visualization. Bridged the gap between complex financial logic and intuitive user interfaces.",
-    tools: "Figma • FigJam • Wireframing",
+    id: "pulse-ix25",
+    title: "Pulse", 
+    category: "UI/UX Prototype (Top 10 Finalist)",
+    event: "IX’25 UI/UX Challenge - IEEE IIT", 
+    image: "/projects/pulse.jpg", 
+    description: "Designed for a 2050 'Blended Reality', Pulse is a conceptual emotion-aware messaging application. It seamlessly integrates passive biometric data from smartwatches and VR headsets to understand user emotional states. The high-fidelity prototype employs a minimalist dark mode aesthetic and professional UI/UX motion graphics to translate complex physiological signals into intuitive, immersive communication.",
+    tools: "Figma • FigJam • UI/UX Motion Graphics",
+    youtubeUrl: "https://youtu.be/HH5w0udlCnM",
+    figmaUrl: "https://www.figma.com/proto/kIUExdU9jcwaSkjvx8UlQW/IX-25---Visual-Vibers?node-id=12-7&p=f&t=X47FYqf4P5eJh6LK-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A7&show-proto-sidebar=1",
     team: [
       { name: "Dulshan Rajeewa", url: "#" },
-      { name: "Teammate One", url: "#" }
+      { name: "Nabil Mahmoor", url: "https://linkedin.com/in/nabil-mahmoor" },
+      { name: "Behan Ravishka", url: "https://www.linkedin.com/in/behanravishkaperera" }
     ]
   },
   {
-    id: "competition-2",
-    title: "Healthcare Booking System", 
-    category: "UI/UX Case Study",
-    event: "Design-a-thon 2025", 
-    image: "/projects/design2.jpg", 
-    description: "Created a scalable design system and user flow for a medical appointment scheduling platform, prioritizing accessibility and clear visual hierarchy for a diverse user base.",
-    tools: "Figma • User Flow • Prototyping",
+    id: "deep-cre8x",
+    title: "Deep", 
+    category: "UI/UX App Design (Top 10 Finalist)",
+    event: "Cre8x 2.0 Designathon - BCS KDU", 
+    image: "/projects/deep.jpg", 
+    description: "Current ocean conservation platforms are often overly scientific or limited to simple donations, leaving users feeling disconnected from the overwhelming scale of marine plastic pollution. To solve this, I designed 'Deep' (Project Ocean Guardian), a mobile app that transforms conservation into an engaging, gamified social experience. The high-fidelity prototype focuses on habit-building UX, visualizing the real-world impact of individual actions, and connecting users for local community cleanups.",
+    tools: "Figma • UI/UX Research • Gamification Strategy",
+    youtubeUrl: "https://youtube.com/shorts/x2M8T0D0C_4?feature=share",
+    figmaUrl: "https://www.figma.com/proto/Ilp8j0tODeLYc7j6MiH4ON/Cre8x-Round-01?page-id=0%3A1&node-id=3-21&viewport=-31%2C-173%2C0.38&t=ZHzSqxoDRs64NNOR-1&scaling=scale-down&content-scaling=fixed",
     team: [
       { name: "Dulshan Rajeewa", url: "#" },
-      { name: "Teammate Two", url: "#" }
+      { name: "Nabil Mahmoor", url: "https://linkedin.com/in/nabil-mahmoor" },
+      { name: "Behan Ravishka", url: "https://www.linkedin.com/in/behanravishkaperera" }
     ]
   }
-  // Add as many Figma designs as you want here
 ];
 
 export default function Design() {
@@ -174,7 +179,42 @@ export default function Design() {
                   <p>{selectedDesign.description}</p>
                 </div>
 
-                <div className="pt-4 border-t border-neutral-800">
+                {/* --- ADDED YOUTUBE AND FIGMA BUTTONS --- */}
+                <div className="flex flex-wrap gap-4 pt-2">
+                  {selectedDesign.youtubeUrl && (
+                    <a 
+                      href={selectedDesign.youtubeUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-medium bg-red-600/10 text-red-500 hover:bg-red-600 hover:text-white border border-red-600/20 hover:border-red-600 transition-all duration-300"
+                    >
+                      <svg className="w-5 h-5 mr-2 fill-current" viewBox="0 0 24 24">
+                        <path d="M21.582 6.186a2.506 2.506 0 0 0-1.766-1.766C18.258 4 12 4 12 4s-6.258 0-7.816.42a2.506 2.506 0 0 0-1.766 1.766C2 7.742 2 12 2 12s0 4.258.418 5.814a2.506 2.506 0 0 0 1.766 1.766C5.742 20 12 20 12 20s6.258 0 7.816-.42a2.506 2.506 0 0 0 1.766-1.766C22 16.258 22 12 22 12s0-4.258-.418-5.814zM10 15.464V8.536L16 12l-6 3.464z"/>
+                      </svg>
+                      Watch Demo
+                    </a>
+                  )}
+
+                  {selectedDesign.figmaUrl && (
+                    <a 
+                      href={selectedDesign.figmaUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-medium bg-neutral-800 text-white hover:bg-neutral-700 border border-neutral-700 hover:border-neutral-500 transition-all duration-300"
+                    >
+                      <svg className="w-5 h-5 mr-2" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 28.5C19 33.7467 14.7467 38 9.5 38C4.25329 38 0 33.7467 0 28.5C0 23.2533 4.25329 19 9.5 19H19V28.5Z" fill="#0ACF83"/>
+                        <path d="M0 9.5C0 4.25329 4.25329 0 9.5 0H19V19H9.5C4.25329 19 0 14.7467 0 9.5Z" fill="#F24E1E"/>
+                        <path d="M38 9.5C38 14.7467 33.7467 19 28.5 19H19V0H28.5C33.7467 0 38 4.25329 38 9.5Z" fill="#FF7262"/>
+                        <path d="M38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5Z" fill="#1ABCFE"/>
+                        <path d="M19 47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5Z" fill="#A259FF"/>
+                      </svg>
+                      View Figma Prototype
+                    </a>
+                  )}
+                </div>
+
+                <div className="pt-4 border-t border-neutral-800 mt-2">
                   <p className="text-xs text-neutral-500 mb-2 font-mono uppercase">Design Team</p>
                   <div className="flex flex-wrap gap-3">
                     {selectedDesign.team.map((member, index) => (

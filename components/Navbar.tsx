@@ -53,7 +53,7 @@ export default function Navbar() {
             ))}
             {/* CTA Button */}
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:dulshanrj1@gmail.com" 
               className="px-5 py-2.5 text-sm font-medium text-black bg-[#ff6b00] rounded-lg hover:bg-[#e05e00] transition-colors shadow-lg shadow-[#ff6b00]/10"
             >
               Hire Me
