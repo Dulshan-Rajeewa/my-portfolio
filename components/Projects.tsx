@@ -63,6 +63,63 @@ const engineeringProjects = [
     team: [
       { name: "Dulshan Rajeewa", url: "#" }
     ]
+  },
+  {
+    id: "glance",
+    title: "Glance AI",
+    category: "Full-Stack AI Application",
+    event: "DEV{thon} 3.0 (UOM)",
+    image: "/projects/glance.jpg",
+    problem: "Manually scheduling events from scattered, multi-modal sources—like physical flyers, voice memos, or unstructured text—is tedious, disjointed, and leads to missed appointments.",
+    solution: "Engineered an intelligent scheduling assistant using Next.js 16 and Mistral's Pixtral vision model. The platform seamlessly parses text, audio, and image inputs to extract event metadata, enabling one-click Google Calendar synchronization and automated task management.",
+    githubUrl: "https://github.com/Dulshan-Rajeewa/glance-main",
+    liveUrl: "https://glance-beta.vercel.app/",
+    team: [
+      { name: "Dulshan Rajeewa", url: "#" },
+      { name: "Nabil Mahmoor", url: "https://linkedin.com/in/nabil-mahmoor" },
+      { name: "Behan Ravishka", url: "https://www.linkedin.com/in/behanravishkaperera" },
+    ]
+  },
+  {
+    id: "ks-transport",
+    title: "KS Transport Management App",
+    category: "Mobile Application",
+    event: "Freelance Client Project",
+    image: "/projects/ks-transport.jpg",
+    problem: "Logistics companies often rely on manual, paper-based systems to track fleet trips and categorized expenses like fuel and maintenance, leading to inaccurate real-time profitability monitoring.",
+    solution: "Developed a modern, responsive Flutter mobile application integrated with Firebase Firestore for real-time data synchronization. The system utilizes Provider for state management and features a comprehensive analytics dashboard to automatically calculate net profit, total kilometers driven, and track operational expenses.",
+    githubUrl: "https://github.com/Dulshan-Rajeewa/Transport-Flutter-app",
+    team: [
+      { name: "Dulshan Rajeewa", url: "#" }
+    ]
+  },
+  {
+    id: "medihunt",
+    title: "MediHunt",
+    category: "Cloud-Native Web App",
+    event: "Innovate with Ballerina 2025",
+    image: "/projects/medihunt.jpg",
+    problem: "Patients frequently struggle to locate specific medications in their area, while pharmacies lack streamlined, real-time inventory discovery platforms, leading to critical delays in healthcare access.",
+    solution: "Engineered a comprehensive medicine finder using a cloud-native Ballerina backend and React 18 frontend. Integrated Supabase for real-time data synchronization, secure JWT authentication, and advanced location-based queries to seamlessly bridge the gap between pharmacy inventories and patient needs.",
+    githubUrl: "https://github.com/Dulshan-Rajeewa/Medicine-finder-application",
+    team: [
+      { name: "Dulshan Rajeewa", url: "#" },
+      { name: "Behan Ravishka", url: "https://www.linkedin.com/in/behanravishkaperera" }
+    ]
+  },
+  {
+    id: "university-info-system",
+    title: "University Information System",
+    category: "Desktop Application",
+    event: "1st Year OOP Project",
+    image: "/projects/university-system.jpg",
+    problem: "Managing university operations manually leads to fragmented data across departments, making it difficult to securely track student enrollments, faculty assignments, and grades.",
+    solution: "Built a centralized desktop application using Java Swing and MySQL, focusing on strong Object-Oriented Programming (OOP) principles. The system features role-based access control and comprehensive GUI dashboards to streamline administrative and academic workflows via JDBC.",
+    githubUrl: "https://github.com/Dulshan-Rajeewa/university-information-system",
+    team: [
+      { name: "Dulshan Rajeewa", url: "#" },
+      { name: "Behan Ravishka", url: "https://www.linkedin.com/in/behanravishkaperera" }
+    ]
   }
 ];
 
