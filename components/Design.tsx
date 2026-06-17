@@ -67,7 +67,7 @@ export default function Design() {
                   src={design.image} 
                   alt={design.title}
                   fill
-                  className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 grayscale group-hover:grayscale-0"
+                  className="object-cover brightness-75 saturate-75 contrast-110 group-hover:brightness-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-500 "
                   onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>

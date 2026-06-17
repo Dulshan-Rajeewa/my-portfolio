@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-// 1. Array containing your current and future research
 const researchPapers = [
   {
     id: "beyond-nlp",
@@ -34,12 +33,11 @@ const researchPapers = [
     team: [
       { name: "Dulshan Rajeewa", url: "#" }
     ],
-    image: "/projects/research-placeholder.jpg" // You can use a generic abstract image here for now
+    image: "/projects/research-placeholder.jpg"
   }
 ];
 
 export default function Research() {
-  // 2. State to track the active slide
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // 3. Navigation Handlers
@@ -148,7 +146,7 @@ export default function Research() {
                       src={paper.image} 
                       alt={paper.title}
                       fill
-                      className="object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
+                      className="object-cover brightness-75 saturate-75 contrast-110 group-hover:brightness-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-500"
                       onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                     {/* Fallback abstract wireframe if image is missing */}

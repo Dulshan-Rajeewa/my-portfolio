@@ -151,7 +151,7 @@ export default function Projects() {
                   src={project.image} 
                   alt={project.title}
                   fill
-                  className="object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 grayscale group-hover:grayscale-0"
+                  className="object-cover brightness-75 saturate-75 contrast-110 group-hover:brightness-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-500"
                   onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
               </div>
